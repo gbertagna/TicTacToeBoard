@@ -20,3 +20,11 @@ TEST(TicTacToeBoardTest, unitTestName)
 	ASSERT_TRUE(true);
 }
 */
+
+TEST(TicTacToeBoardTest, pieceStartTurn)
+{
+	TicTacToeBoard Board;
+	Piece start = Board.toggleTurn();
+	ASSERT_EQ(start, '?');
+	
+}
